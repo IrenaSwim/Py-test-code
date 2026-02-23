@@ -6,3 +6,6 @@ def info_store(input_str):
 
 data = {}
 inf_gen = (x for x in itertools.count())
+
+while True:
+    user = input('Введите имя, возраст и профессию через пробел ')
