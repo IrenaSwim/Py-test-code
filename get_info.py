@@ -14,6 +14,7 @@ while True:
     else:
         user_info = info_store(user)
         data.setdefault(next(inf_gen), user_info)
-
+print()
 for key, value in data.items():
-    print(f'Идентификатор {value[0]}: {key}')
+    print(f'Сотрудник {value[0]}: идентификатор{key}, возраст {value[1]}, должность {value[2]}')
+
