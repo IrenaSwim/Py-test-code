@@ -9,3 +9,8 @@ inf_gen = (x for x in itertools.count())
 
 while True:
     user = input('Введите имя, возраст и профессию через пробел ')
+    if user == 'stop':
+        break
+    else:
+        user_info = info_store(user)
+        data.setdefault(next(inf_gen), user_info)
