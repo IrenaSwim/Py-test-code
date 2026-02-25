@@ -14,3 +14,8 @@ while True:
     else:
         user_info = info_store(user)
         data.setdefault(next(inf_gen), user_info)
+    if user == 'no':
+        break
+    else:
+        user_info = info_store(user)
+        data.setdefault(next(inf_gen), user_info)
