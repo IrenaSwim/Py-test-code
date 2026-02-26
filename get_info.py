@@ -1,7 +1,7 @@
 import itertools
 
 def info_store(input_str):
-    info_list = info_store.split()
+    info_list = input_str.split()
     return info_list
 
 data = {}
@@ -16,5 +16,5 @@ while True:
         data.setdefault(next(inf_gen), user_info)
 print()
 for key, value in data.items():
-    print(f'Сотрудник {value[0]}: идентификатор{key}, возраст {value[1]}, должность {value[2]}')
+    print(f'Сотрудник {value[0]}: идентификатор {key}, возраст {value[1]}, должность {value[2]}')
 
