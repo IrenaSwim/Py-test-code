@@ -1,0 +1,1 @@
+Here are some code samples showing processes of recieving and storing information 
